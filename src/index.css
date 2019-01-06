@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -7,8 +12,26 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.form-container form{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.form-container{
+  text-align: center;
+}
+.form-container form label{
+  width: 100%;
+  flex: 1 1 100%;
+  padding: 2rem 1rem ;
+  font-size: 1.5rem;
+}
+.form-container form input,.form-container form button{
+  flex: 1 1 40%;
+  padding: 0.5rem 0.2rem;
+  border: 1px solid transparent;
+}
+.form-container form input{
+  border-color: #eee;
 }
